@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #444;
+    height: 100vh;
+}
+
+#conteiner{
+    background-color: blueviolet;
+    height: 60%;
+    width: 580px; 
+    border-radius: 4px;
+    box-shadow: 0 0  15px rgba(0, 0, 0, 0.492);
+}
+
+#conteiner::before{
+    content: '';
+    position: absolute;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.776), rgba(0, 0, 0, 0.288));
+    height: 60%;
+    width: 580px; 
+    
+}
+
+#img{
+    position: relative;
+    left: 50px;
+    top: -20px;
+    width: 320px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 8px;
+    animation: run 4s infinite;
+}
+
+img{
+    height: 240px;
+    width: 360px;
+}
+
+@keyframes run{
+    0%{
+        transform: translateY(-60px);
+    }
+    50%{
+        transform: translateY(40px);
+    }
+    100%{
+        transform: translateY(-60px);
+    }
+}
+
+ul{
+    display: flex;
+    margin: 80px 0 100px 200px;
+}
+
+ul li {
+    position: relative;
+    z-index: 100;
+    font-size: 1.8rem;
+    margin: 8px;
+    list-style: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+ul li a{
+    color: #fff;
+}
+
+ul li a :hover{
+   
+    filter: drop-shadow(0 0 15px white);
+}
+
+ul li:hover{
+    transition: .5s;
+    transform: translateY(-20px);
+}
+
+
+
+.sessao-compra{
+    display: flex;
+}
+
+
+.sessao-compra section {
+  margin: 10px 0 0 80px;
+  height: 210px;
+  width: 160px;
+}
+.sessao-compra p{
+    color: rgb(0, 0, 0);
+    font-size: 2.3rem;
+    text-align: center;
+}
+
+.sessao-compra button{
+    border: none;
+    padding: 15px;
+    color: white;
+    background-color: rgb(188, 22, 188);
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 30%;
+    margin:  50px;
+    position: relative;
+    z-index: 100;
+}
+.sessao-compra button:hover{
+    box-shadow: 0 0 15px rgb(225, 18, 225), inset 0 0 15px rgb(225, 18, 225) ;
+    cursor: pointer;
+}
+
+
+footer{
+    display: flex;
+}
+
+footer img{
+    z-index: 100;
+}
